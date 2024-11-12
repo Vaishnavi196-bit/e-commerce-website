@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>e-commerce</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <button class="btn btn-transparent text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+     <i class="fa-solid fa-bars"></i>
+  </button>
+
+
+
+    <a class="navbar-brand" href="#">
+      <img src="shop.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">FASHION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">MOBILES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">DEALS</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">HOME</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">ELECTRONIC</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">BEAUTY</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">AMAZE</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="dropdown">
+  <button type="button" class="btn btn-transparent dropdown-toggle" data-bs-toggle="dropdown">
+    MENS 
+  </button>
+  <ul class="dropdown-menu ">
+    <li><a class="dropdown-item" href="#">JEANS</a></li>
+    <li><a class="dropdown-item" href="#">T-SHIRT</a></li>
+    <li><a class="dropdown-item" href="#">SHIRT</a></li>
+    <li><a class="dropdown-item" href="#">SHOES</a></li>
+    <li><a class="dropdown-item" href="#">SUNGLASSES</a></li>
+    <li><a class="dropdown-item" href="#">GRROMING</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button type="button" class="btn btn-transparent dropdown-toggle" data-bs-toggle="dropdown">
+    WOMENS 
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">JEANS</a></li>
+    <li><a class="dropdown-item" href="#">T-SHIRT</a></li>
+    <li><a class="dropdown-item" href="#">DRESS</a></li>
+    <li><a class="dropdown-item" href="#">CO-ORD</a></li>
+    <li><a class="dropdown-item" href="#">SUNGLASSES</a></li>
+    <li><a class="dropdown-item" href="#">BEAUTY</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button type="button" class="btn btn-transparent dropdown-toggle" data-bs-toggle="dropdown">
+    KIDS
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">JEANS</a></li>
+    <li><a class="dropdown-item" href="#">T-SHIRT</a></li>
+    <li><a class="dropdown-item" href="#">SHIRT</a></li>
+    <li><a class="dropdown-item" href="#">SHOES</a></li>
+    <li><a class="dropdown-item" href="#">SUNGLASSES</a></li>
+    <li><a class="dropdown-item" href="#">TOYS</a></li>
+  </ul>
+</div>
+
+<div class="dropdown">
+  <button type="button" class="btn btn-transparent dropdown-toggle" data-bs-toggle="dropdown">
+    BEAUTY
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">COMPACT</a></li>
+    <li><a class="dropdown-item" href="#">BLUSHER</a></li>
+    <li><a class="dropdown-item" href="#">LIPSTICK</a></li>
+    <li><a class="dropdown-item" href="#">MASCARA</a></li>
+    <li><a class="dropdown-item" href="#">EYELINEAR</a></li>
+    <li><a class="dropdown-item" href="#">PRIMER</a></li>
+  </ul>
+</div>
+    <button class="btn btn-secondary" type="button"><i class="far fa-user-circle"> LOG OUT</i></button>
+    
+  </div>
+</div>
+
+
+
+
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.pexels.com/photos/14494509/pexels-photo-14494509.jpeg?auto=compress&cs=tinysrgb&w=600" alt="womens" class="d-block" style="width: 1600px;height: 600px;">
+       <div class="carousel-caption">
+        <h2>Dresses</h2>
+        <p>starting from 1500rs to 5000rs</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/9627996/pexels-photo-9627996.jpeg?auto=compress&cs=tinysrgb&w=600" alt="mens" class="d-block" style="width:1600px;height:600px;">
+      <div class="carousel-caption">
+        <h2>jeans and top</h2>
+        <p>starting from 500rs to 5000rs</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/7169019/pexels-photo-7169019.jpeg?auto=compress&cs=tinysrgb&w=600" alt="BEAUTY" class="d-block" style="width:1600px;height:600px;">
+       <div class="carousel-caption">
+        <h2>dress</h2>
+        <p>starting from 500rs to 4000rs</p>
+      </div> 
+    </div>
+    
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+	<div class="container-fluid">
+		<div class="row">
+      <h1 class="p-3">KIDs FASHION</h1>
+    <div class="col-sm-6 p-3 mt-2  text-black text-center">
+      <img src="https://images.pexels.com/photos/7281864/pexels-photo-7281864.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+      <h6>500Rs</h6>
+      <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+
+    </div>
+    <div class="col-sm-6 p-3 mt-2 text-black text-center">
+    <img src="https://images.pexels.com/photos/6201983/pexels-photo-6201983.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+    <h6>800Rs</h6>
+    <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+  </div>
+  </div>
+   <div class="row">
+     
+    <div class="col-sm-6 p-3 mt-2  text-black text-center">
+      <img src="https://images.pexels.com/photos/29330123/pexels-photo-29330123/free-photo-of-smiling-south-asian-toddler-in-leopard-print-dress.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+      <h6>1000Rs</h6>
+      <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+
+    </div>
+    <div class="col-sm-6 p-3 mt-2 text-black text-center">
+    <img src="https://images.pexels.com/photos/29283080/pexels-photo-29283080/free-photo-of-stylish-child-posing-in-denim-with-tropical-background.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+    <h6>1500Rs</h6>
+    <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+  </div>
+  </div>
+  <div class="row">
+      
+    <div class="col-sm-6 p-3 mt-2  text-black text-center">
+      <img src="https://images.pexels.com/photos/29283072/pexels-photo-29283072/free-photo-of-smiling-child-in-casual-outfit-at-modern-cafe.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+      <h6>500Rs</h6>
+      <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+
+    </div>
+    <div class="col-sm-6 p-3 mt-2 text-black text-center">
+    <img src="https://images.pexels.com/photos/27818934/pexels-photo-27818934/free-photo-of-infant-girl-climbing-wooden-fence-looking.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height:400px;">
+    <h6> 800Rs</h6>
+    <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+  </div>
+  </div>
+   <div class="row">
+     
+    <div class="col-sm-6 p-3 mt-2  text-black text-center">
+      <img src="https://images.pexels.com/photos/29338602/pexels-photo-29338602/free-photo-of-young-girl-in-floral-dress-outdoors.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+      <h6>1000Rs</h6>
+      <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+
+    </div>
+    <div class="col-sm-6 p-3 mt-2 text-black text-center">
+    <img src="https://images.pexels.com/photos/29338596/pexels-photo-29338596/free-photo-of-young-girl-in-illuminated-archway.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+    <h6>1500Rs</h6>
+    <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+  </div>
+  </div>
+
+
+	</div>
+  <div class="row">
+      
+    <div class="col-sm-6 p-3 mt-2  text-black text-center">
+      <img src="https://images.pexels.com/photos/25158814/pexels-photo-25158814/free-photo-of-boy-sitting-on-a-wooden-chair-in-an-orange-room.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+      <h6>5000Rs</h6>
+      <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+
+    </div>
+    <div class="col-sm-6 p-3 mt-2 text-black text-center">
+    <img src="https://images.pexels.com/photos/25158822/pexels-photo-25158822/free-photo-of-girl-with-a-headscarf-smelling-flowers-in-an-orange-room.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+    <h6> 1800Rs</h6>
+    <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+  </div>
+  </div>
+   <div class="row">
+      
+    <div class="col-sm-6 p-3 mt-2  text-black text-center">
+      <img src="https://images.pexels.com/photos/25158804/pexels-photo-25158804/free-photo-of-boy-standing-in-an-orange-room.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+      <h6>5000Rs</h6>
+      <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+
+    </div>
+    <div class="col-sm-6 p-3 mt-2 text-black text-center">
+    <img src="https://images.pexels.com/photos/25158809/pexels-photo-25158809/free-photo-of-boy-posing-in-an-orange-room.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+    <h6> 1800Rs</h6>
+    <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+  </div>
+  </div>
+  <div class="row">
+      
+    <div class="col-sm-6 p-3 mt-2  text-black text-center">
+      <img src="https://images.pexels.com/photos/28998240/pexels-photo-28998240/free-photo-of-young-girl-holding-vintage-camera-on-wooden-floor.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+      <h6>500Rs</h6>
+
+      <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+
+    </div>
+    <div class="col-sm-6 p-3 mt-2 text-black text-center">
+    <img src="https://images.pexels.com/photos/19220404/pexels-photo-19220404/free-photo-of-little-girl-sitting-on-a-bench-covering-her-eyes.jpeg?auto=compress&cs=tinysrgb&w=600"style="width:450px;height: 400px;">
+    <h6> 1800Rs</h6>
+    <div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-primary">BUY NOW</button>
+  <button type="button" class="btn btn-info">ADD TO CART</button>
+</div>
+  </div>
+  </div>
+
+  <nav class="navbar navbar-expand-sm navbar-primary  bg-dark m-1 text-center bottom-fixed ">
+ 
+  <div class="container-fluid">
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    ​<div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)" style = "margin-right:10px;"><i class="fa-solid fa-house"style = "font-size:30px;"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"style = "margin-left: 150px;"><i class="far fa-user-circle"style = "font-size:30px;"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"style = "margin-left: 180px;"><i class="fa-solid fa-bars"style = "font-size:30px;"></i></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"style = "margin-left: 170px;"style = "margin-right: 30px;"style = "font-size:30px;"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)"style = "margin-left: 240px;"><i class="fa-solid fa-cart-shopping"style = "font-size:30px;"></i></a>
+        </li>
+         
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>
+</html>
